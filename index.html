@@ -2,9 +2,7 @@
 <html>
 <head>
 	<link rel="icon" type="image/png" href="https://em-content.zobj.net/source/google/350/desktop-computer_1f5a5-fe0f.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<title> Conteúdo rede de computadores </title>
 	
 	<style>
@@ -52,10 +50,17 @@
 			padding: 25px;
 		}
 		.imagem img{
-			border-radius: 25px;
-			display: flex;
-			margin: auto;
+   			border-radius: 25px;
+    			display: block;
+    			margin: auto;
+    			filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+    			transition: 0.3s ease;
 		}
+
+		.imagem img:hover{
+   			 transform: translateY(-5px);
+    			filter: drop-shadow(0 5px 10px rgba(0,0,0,0.75));
+}		
 		h3 {
 			font-family: "Cascadia Mono",sans-serif;
 			font-size: 30px;
@@ -163,6 +168,17 @@ nav a:not(:hover)::after {
     transform-origin: right;           /* encolhe para direita */
 }
 		
+	.txt{
+		background-color: #44465e;
+		padding: 25px;
+		border-radius: 25px;
+		color: white;
+		filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5)); transition: 0.3s ease;
+		.imagem img:hover{ transform: translateY(-5px); filter: drop-shadow(0 5px 10px rgba(0,0,0,0.75)); }
+	}
+	
+
+		
 	</style>
 	
 </head>
@@ -188,14 +204,18 @@ nav a:not(:hover)::after {
 	</div>
 	<div class="cabe">
 		<h1> REDES DE COMPUTADORES </h1>
+		<div class="txt">
 		<p> A disciplina de Redes de Computadores no curso de Análise e Desenvolvimento de Sistemas tem como objetivo apresentar os fundamentos teóricos e práticos que possibilitam a 			comunicação 	entre dispositivos digitais. Ela fornece a base para que o profissional compreenda como sistemas, servidores, computadores e dispositivos móveis trocam informações 		de forma segura e 		eficiente. Esse conhecimento é essencial para o desenvolvimento, implantação e manutenção de sistemas conectados em rede. </p>
 	<a href="#tcp" class="but">Começar a rever</a>
+		</div>
 	</div>
 
 	<section id="tcp">
 		<h3> Modelo de Referência (OSI e TCP/IP) </h3>
 		<div class="tcp">
+		<div class="txt">
 				<p> Os modelos de referência organizam a comunicação em camadas para facilitar o entendimento e a padronização dos processos de rede. O modelo OSI, desenvolvido pela International Organization for Standardization, divide a comunicação em sete camadas, cada uma com funções específicas, desde a transmissão física até a interface com o usuário. Já o modelo TCP/IP, amplamente utilizado na internet, é estruturado em quatro camadas e é mais aplicado na prática. Esses modelos auxiliam na compreensão do envio, recebimento e encapsulamento dos dados. </p> 
+		</div>
 			<div class="imagem">
 				<img src="mid/tcp.png" width=300px;>
 			</div>
@@ -208,14 +228,18 @@ nav a:not(:hover)::after {
 			<div class="imagem">
 				<img src="mid/IP.png" width=300px;>
 			</div>
+	<div class="txt">
 	<p> O endereço IP identifica dispositivos na rede. Pode ser IPv4 (ex: 192.168.0.1) ou IPv6 (formato hexadecimal). O IPv4 possui classes (A, B, C) e utiliza máscara de sub-rede para dividir redes. Conceitos como gateway, DNS e DHCP também são fundamentais para comunicação e configuração automática de rede. </p> 
 		</div>
+	</div>
 	</section>
 	<hr>
 	<section id="comm">
 		<h3> Protocolos de Comunicação </h3>
 		<div class="prot">
-			<p> Protocolos são regras que definem como os dados são transmitidos. O TCP é confiável e orientado à conexão, garantindo entrega correta. O UDP é mais rápido e não garante entrega. Outros protocolos importantes incluem HTTP/HTTPS, FTP, SMTP, POP3, IMAP e ARP. </p> 
+		<div class="txt">
+			<p> Protocolos são regras que definem como os dados são transmitidos. O TCP é confiável e orientado à conexão, garantindo entrega correta. O UDP é mais rápido e não garante entrega. Outros protocolos importantes incluem HTTP/HTTPS, FTP, SMTP, POP3, IMAP e ARP. </p>
+		</div> 
 			<div class="imagem">
 				<img src="mid/prot.png" width=300px;>
 			</div>
@@ -228,7 +252,9 @@ nav a:not(:hover)::after {
 			<div class="imagem">
 				<img src="mid/eq.png" width=300px;>
 			</div>
+		<div class="txt">
 			<p> Os principais dispositivos são roteador, switch, hub, modem e access point. O roteador conecta redes diferentes, o switch conecta dispositivos na mesma rede, e o access point fornece acesso Wi-Fi. Cada equipamento atua em camadas específicas do modelo OSI. </p> 
+		</div
 		</div>
 	</section>
 	<hr>
@@ -236,7 +262,9 @@ nav a:not(:hover)::after {
 		<h3> Topologias de rede </h3>
 
 		<div class="top">
-			<p> Os principais dispositivos são roteador, switch, hub, modem e access point. O roteador conecta redes diferentes, o switch conecta dispositivos na mesma rede, e o access point fornece acesso Wi-Fi. Cada equipamento atua em camadas específicas do modelo OSI. </p> 
+		<div class="txt">
+			<p> Os principais dispositivos são roteador, switch, hub, modem e access point. O roteador conecta redes diferentes, o switch conecta dispositivos na mesma rede, e o access point fornece acesso Wi-Fi. Cada equipamento atua em camadas específicas do modelo OSI. </p>
+		</div> 
 			<div class="imagem">
 				<img src="mid/top.png" width=300px;>
 			</div>
@@ -251,7 +279,9 @@ nav a:not(:hover)::after {
 			<div class="imagem">
 				<img src="mid/seg.png" width=300px;>
 			</div>
+		<div class="txt">
 			<p> Envolve proteger dados contra acessos não autorizados. São utilizados firewall, criptografia, VPN, controle de acesso e autenticação. Conceitos como ataques DDoS, phishing e malware também são estudados. </p> 
+		</div>
 	</div>
 	</section>
 
@@ -261,7 +291,9 @@ nav a:not(:hover)::after {
 		<h3> Cabeamento e Meios de Transmissão </h3>
 
 		<div class="cab">
+		<div class="txt">
 			<p> A transmissão pode ser feita por cabos de par trançado (UTP), fibra óptica ou coaxial, além de meios sem fio (wireless). A escolha influencia velocidade, latência e interferência. </p> 
+		</div>
 			<div class="imagem">
 				<img src="mid/cab.png" width=300px;>
 			</div>
@@ -276,7 +308,9 @@ nav a:not(:hover)::after {
 			<div class="imagem">
 				<img src="mid/sub.png" width=300px;>
 			</div>
+		<div class="txt">
 			<p> A técnica de subnetting divide uma rede em partes menores, melhorando organização e segurança. O CIDR (Classless Inter-Domain Routing) permite uso mais eficiente de endereços IP. </p> 
+		</div>
 	</div>
 	</section>
 	<hr>
@@ -285,7 +319,9 @@ nav a:not(:hover)::after {
 		<h3> Serviços de Rede </h3>
 
 		<div class="serv">
+		<div class="txt">
 			<p> Incluem servidores web, servidores de arquivos, servidores de e-mail e bancos de dados. Em ADS, é importante entender como aplicações backend dependem da infraestrutura de rede para funcionar corretamente. </p> 
+		</div>
 			<div class="imagem">
 				<img src="mid/serv.png" width=300px;>
 			</div>
@@ -295,5 +331,4 @@ nav a:not(:hover)::after {
 	</main>
 	
 </body>
-
 </html>
