@@ -11,7 +11,7 @@
 
 	@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+	@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 		body {
     			background-color: white;
@@ -19,7 +19,10 @@
     			position: relative;
 		}
 
-
+		html{
+			scroll-behavior: smooth;
+		}
+		
 		body::before {
    			 content: "";
     			position: fixed;
@@ -52,7 +55,6 @@
 			padding: 25px;
 		}
 		.imagem img{
-   			border-radius: 25px;
     			display: block;
     			margin: auto;
     			filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
@@ -68,6 +70,7 @@
 			font-size: 30px;
 			border: 0;
 			padding: 25px;
+			text-align: center;
 		}
 		nav a{
 			text-decoration: none;
@@ -82,7 +85,7 @@
 			align-items: center;
 		}
 		.cabe {
-			padding: 160px;
+			padding: 222px;
 			background-color: #44465e;
 			text-align: center;
 			display: flex;
@@ -138,8 +141,8 @@
 		}
 		nav a {
     text-decoration: none;
-    padding: 20px 15px;
-    font-family: "Cascadia Mono", sans-serif;
+    padding: 20px 20px;
+    font-family: "Comfortaa", sans-serif;
     color: black;
     position: relative;
 }
@@ -171,6 +174,7 @@ nav a:not(:hover)::after {
 }
 		
 	.txt{
+		font-family: "Comfortaa", sans-serif;
 		background-color: #44465e;
 		padding: 25px;
 		border-radius: 25px;
@@ -178,6 +182,7 @@ nav a:not(:hover)::after {
 		filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5)); transition: 0.3s ease;
 		.imagem img:hover{ transform: translateY(-5px); filter: drop-shadow(0 5px 10px rgba(0,0,0,0.75)); }
 	}
+	
 	
 
 		
@@ -219,7 +224,9 @@ nav a:not(:hover)::after {
 				<p> Os modelos de referência organizam a comunicação em camadas para facilitar o entendimento e a padronização dos processos de rede. O modelo OSI, desenvolvido pela International Organization for Standardization, divide a comunicação em sete camadas, cada uma com funções específicas, desde a transmissão física até a interface com o usuário. Já o modelo TCP/IP, amplamente utilizado na internet, é estruturado em quatro camadas e é mais aplicado na prática. Esses modelos auxiliam na compreensão do envio, recebimento e encapsulamento dos dados. </p> 
 		</div>
 			<div class="imagem">
+				<a href="mid/tcp.png" target="_blank">
 				<img src="mid/tcp.png" width=300px;>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -228,7 +235,9 @@ nav a:not(:hover)::after {
 		<h3> Endereçamento IP </h3>
 		<div class="ip">
 			<div class="imagem">
+				<a href="mid/IP.png" target="_blank">
 				<img src="mid/IP.png" width=300px;>
+				</a>
 			</div>
 	<div class="txt">
 	<p> O endereço IP identifica dispositivos na rede. Pode ser IPv4 (ex: 192.168.0.1) ou IPv6 (formato hexadecimal). O IPv4 possui classes (A, B, C) e utiliza máscara de sub-rede para dividir redes. Conceitos como gateway, DNS e DHCP também são fundamentais para comunicação e configuração automática de rede. </p> 
@@ -243,7 +252,9 @@ nav a:not(:hover)::after {
 			<p> Protocolos são regras que definem como os dados são transmitidos. O TCP é confiável e orientado à conexão, garantindo entrega correta. O UDP é mais rápido e não garante entrega. Outros protocolos importantes incluem HTTP/HTTPS, FTP, SMTP, POP3, IMAP e ARP. </p>
 		</div> 
 			<div class="imagem">
+				<a href="mid/prot.png" target="_blank">
 				<img src="mid/prot.png" width=300px;>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -252,7 +263,9 @@ nav a:not(:hover)::after {
 		<h3> Equipamentos de Rede </h3>
 		<div class="eq">
 			<div class="imagem">
+				<a href="mid/eq.png" target="_blank">
 				<img src="mid/eq.png" width=300px;>
+				</a>
 			</div>
 		<div class="txt">
 			<p> Os principais dispositivos são roteador, switch, hub, modem e access point. O roteador conecta redes diferentes, o switch conecta dispositivos na mesma rede, e o access point fornece acesso Wi-Fi. Cada equipamento atua em camadas específicas do modelo OSI. </p> 
@@ -268,7 +281,9 @@ nav a:not(:hover)::after {
 			<p> Os principais dispositivos são roteador, switch, hub, modem e access point. O roteador conecta redes diferentes, o switch conecta dispositivos na mesma rede, e o access point fornece acesso Wi-Fi. Cada equipamento atua em camadas específicas do modelo OSI. </p>
 		</div> 
 			<div class="imagem">
+				<a href="mid/top.png" target="_blank">
 				<img src="mid/top.png" width=300px;>
+				</a>
 			</div>
 	</div>
 	</section>
@@ -279,7 +294,9 @@ nav a:not(:hover)::after {
 
 		<div class="seg">
 			<div class="imagem">
+				<a href="mid/seg.png" target="_blank">
 				<img src="mid/seg.png" width=300px;>
+				</a>
 			</div>
 		<div class="txt">
 			<p> Envolve proteger dados contra acessos não autorizados. São utilizados firewall, criptografia, VPN, controle de acesso e autenticação. Conceitos como ataques DDoS, phishing e malware também são estudados. </p> 
@@ -297,7 +314,9 @@ nav a:not(:hover)::after {
 			<p> A transmissão pode ser feita por cabos de par trançado (UTP), fibra óptica ou coaxial, além de meios sem fio (wireless). A escolha influencia velocidade, latência e interferência. </p> 
 		</div>
 			<div class="imagem">
+				<a href="mid/cab.png" target="_blank">
 				<img src="mid/cab.png" width=300px;>
+				</a>
 			</div>
 	</div>
 	</section>
@@ -308,7 +327,9 @@ nav a:not(:hover)::after {
 
 		<div class="sub">
 			<div class="imagem">
+				<a href="mid/sub.png" target="_blank">
 				<img src="mid/sub.png" width=300px;>
+				</a>
 			</div>
 		<div class="txt">
 			<p> A técnica de subnetting divide uma rede em partes menores, melhorando organização e segurança. O CIDR (Classless Inter-Domain Routing) permite uso mais eficiente de endereços IP. </p> 
@@ -325,7 +346,9 @@ nav a:not(:hover)::after {
 			<p> Incluem servidores web, servidores de arquivos, servidores de e-mail e bancos de dados. Em ADS, é importante entender como aplicações backend dependem da infraestrutura de rede para funcionar corretamente. </p> 
 		</div>
 			<div class="imagem">
+				<a href="mid/serv.png" target="_blank">
 				<img src="mid/serv.png" width=300px;>
+				</a>
 			</div>
 	</div>
 	</section>
